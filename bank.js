@@ -30,7 +30,7 @@ class Bank
         }
     }
 
-    deposite = (amount) => {
+    deposite(amount){
         if (amount > 0) {
             this.#balance += amount;
             console.log(this.getBalance());
