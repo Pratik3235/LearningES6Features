@@ -9,3 +9,15 @@ function sum(...nums)
 }
 
 console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9)); //Output:45
+
+// rest parameter in object is used to collect rest of the remaining parts like shown below
+
+let person = {
+    name: "Pratik",
+    age: 20,
+    gender: "male"
+};
+
+const { name, ...rest } = person;
+console.log(name);//output: Pratik
+console.log(rest);//output: { age: 20, gender: 'male' }
