@@ -6,5 +6,3 @@ let sentence = "The night is very loud";
 let out = sentence.endsWith("loud");
 
 let res = sentence.endsWith("very",17);
-console.log(res);//true
-console.log(out);//true
