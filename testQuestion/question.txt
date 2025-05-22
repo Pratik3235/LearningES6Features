@@ -1,0 +1,37 @@
+You are given the following array of user objects:
+
+javascript
+Copy
+Edit
+const users = [
+  { id: 1, name: "Alice", age: 28 },
+  { id: 2, name: "Bob", age: 34 },
+  { id: 3, name: "Charlie", age: 22 }
+];
+Write an ES6 function formatUserInfo that:
+
+Takes a user object as a parameter (use object destructuring),
+
+Uses default parameters to set age to 18 if it's not provided,
+
+Returns a template literal string like:
+"User Alice (ID: 1) is 28 years old."
+
+Then use arrow functions and spread operator to:
+
+Create a new array of users that includes all original users,
+
+Plus one new user { id: 4, name: "Diana" } (note: no age),
+
+Map over the array to generate the formatted strings using your formatUserInfo function.
+
+📝 Expected Output:
+javascript
+Copy
+Edit
+[
+  "User Alice (ID: 1) is 28 years old.",
+  "User Bob (ID: 2) is 34 years old.",
+  "User Charlie (ID: 3) is 22 years old.",
+  "User Diana (ID: 4) is 18 years old."
+]
